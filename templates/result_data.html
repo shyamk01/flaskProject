@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Result</title>
+</head>
+<body>
+<p> <strong>Thanks for the registration, Confirm Your Details</strong></p>
+<table border="1">
+    {% for key,value in result.items()%}
+    <tr>
+        <th>
+            {{key}}
+        </th>
+        <th>
+            {{value}}
+        </th>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>
